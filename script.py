@@ -14,7 +14,7 @@ import time
 # please change file name and directory
 data01 = pd.read_excel('GNZ48-吴羽霏应援会.xls')
 
-#dataframe to list
+# dataframe to list
 aid = data01[['视频aid']]
 aid = aid.values.tolist()
 aid01 = []
@@ -23,7 +23,7 @@ for i in aid:
         bbb = int(aaa)
         aid01.append(bbb)
         
-#get p names
+# get p names
 aid_names = []
 for i in aid01:
     print("正在爬取视频" + str(i) + "分p名称\n")
